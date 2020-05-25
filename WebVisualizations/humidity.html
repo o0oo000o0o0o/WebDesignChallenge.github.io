@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <header>
+        <meta charset="UTF-8">
+        <title>Landing</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .Title{
+                color: white;
+                text-align: center;
+            }
+            .summary{
+                color: rgb(25, 0, 255);
+            }
+            body{
+                background-color:#213b58;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 20px;
+                }
+        </style>
+    </header>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\index.html">Latitude</a>
+            </div>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\maxtemp.html">Latitude Vs. Max Temperature</a></li>
+                    <li><a href="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\humidity.html">Latitude Vs. Humidity</a></li>
+                    <li><a href="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\cloudiness.html">Latitude Vs. Cloudiness</a></li>
+                    <li><a href="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\windspeed.html">Latitude Vs. Wind Speed</a></li>
+                </ul>
+                <a href="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\comparison.html">Comparison</a>
+                <a href="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\data.html">Data</a>
+            </ul>
+            </div>
+        </nav>
+
+        <div class="card border-light mb-3" style="max-width: 100rem; margin-left: auto; margin-right: auto; background-color: #213b58; color: white;">
+            <div class="card-body">
+                <strong><h1 class="Title">Latitude vs Humidity</h1></strong>
+                <hr>
+                <img src="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\Resources\assets\images\fig2.png" alt="Latitude vs Max Temperature" width="700" height ="550">
+                <br>
+                <p class="card-text" style="font-size: 20px;">As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More Interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+            </div>
+        </div>
+        <div class="card border-light mb-3" style="max-width: 100rem; margin-left: auto; margin-right: auto; background-color: #213b58; color: white;">
+            <div class="card-body">
+                <strong><h2 class="Title">Visualizations</h1></strong>
+                <br>
+                <!-- <p class="card-text" style="font-size: 20px;">Click Any Plot to Get In-Depth Analysis</p> -->
+                <div class="grid-container">
+                    <div class="grid-child purple">
+                        <a class="VisualizationList" href="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\maxtemp.html"><img src="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\Resources\assets\images\fig1.png" alt="Latitude Vs. Max Temperature" width="200" height="150"><br>Latitude Vs. Max Temperature</a>
+                    </div>
+        
+                    <div class="grid-child green">
+                        <a class="VisualizationList" href="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\humidity.html"><img src="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\Resources\assets\images\fig2.png" alt="Latitude Vs. Humidity" width="200" height="150"><br>Latitude Vs. Humidity</a>
+                    </div>
+        
+                    <div class="grid-child blue">
+                        <a class="VisualizationList" href="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\cloudiness.html"><img src="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\Resources\assets\images\fig3.png" alt="Latitude Vs. Cloudiness" width="200" height="150"><br>Latitude Vs. Cloudiness</a>            
+                    </div>
+        
+                    <div class="grid-child green">
+                        <a class="VisualizationList" href="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\windspeed.html"><img src="C:\Users\ASush\Desktop\NU_BootCamp\Wed-Design-Challenge\WebVisualizations\Resources\assets\images\fig4.png" alt="Latitude Vs. Wind Speed" width="200" height="150"><br>Latitude Vs. Wind Speed            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
